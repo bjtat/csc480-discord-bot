@@ -25,12 +25,23 @@ async def on_message(message):
         await message.channel.send('hello!')
 
     if message.content.startswith('Robin,'):
-        await message.channel.send(f"message is: [{message.content}]")
+        await message.channel.send(f"message is: {message.content}")
         cleaned_msg = clean_msg(message.content)
         keyword_list = test_model(cleaned_msg)
-        await message.channel.send(f"keywords is: [{keyword_list}]")
+        await message.channel.send(f"keywords is: {keyword_list}")
         formatted = format_keywords(keyword_list)
         await message.channel.send(formatted)
+
+    if message.content.startswith('GIT, '):
+        filetext = "some error has occurred"
+        print(message.content)
+        command = message.content.split()[1]
+        filetext = readfile(f"./git_entries/{command}.txt")
+        await message.channel.send(filetext)
+
+def readfile(filepath):
+    with open(filepath, 'r') as f:
+        return f.read()
 
 def clean_msg(msg):
     cm = msg.removeprefix("Robin,")
@@ -46,7 +57,7 @@ def format_keywords(keywords):
 def test_model(msg):
     keywords = nlp_model.get_keywords(model, msg)
     sorted_keywords = [x[0] for x in Counter(keywords).most_common(min(MIN_KEYWORDS, len(keywords)))]
-    return (' '.join(sorted_keywords))
+    return sorted_keywords
 
 if __name__ == '__main__':
     load_dotenv()

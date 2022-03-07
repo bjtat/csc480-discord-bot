@@ -1,0 +1,3 @@
+This is a textfile about git config
+Some info about git config
+Link to other git config resources: help.com/git_config

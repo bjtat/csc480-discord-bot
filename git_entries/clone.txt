@@ -1,0 +1,3 @@
+This is a textfile about git clone
+Some info about git clone
+Link to other git clone resources: help.com/git_clone

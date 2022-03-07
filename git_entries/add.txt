@@ -1,0 +1,3 @@
+This is a textfile about git add
+Some info about git add
+Link to other git add resources: help.com/git_add

@@ -1,0 +1,3 @@
+This is a textfile about git init
+Some info about git init
+Link to other git init resources: help.com/git_init

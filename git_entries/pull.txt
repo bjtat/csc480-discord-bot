@@ -1,0 +1,3 @@
+This is a textfile about git pull
+Some info about git pull
+Link to other git pull resources: help.com/git_pull

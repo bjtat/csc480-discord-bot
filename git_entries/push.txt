@@ -1,0 +1,3 @@
+This is a textfile about git push
+Some info about git push
+Link to other git push resources: help.com/git_push

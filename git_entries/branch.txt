@@ -1,0 +1,3 @@
+This is a textfile about git branch
+Some info about git branch
+Link to other git branch resources: help.com/git_branch

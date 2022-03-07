@@ -30,16 +30,21 @@ async def on_message(message):
         keyword_list = test_model(cleaned_msg)
         await message.channel.send(f"keywords is: {keyword_list}")
         formatted = format_keywords(keyword_list)
-        await message.channel.send(formatted)
+        await message.channel.send(keyword_list)
+        if "git" in keyword_list:
+            filetext = "some error has occurred"
+            git_word = get_correct_msg(keyword_list)
+            filetext = read_git_file(git_word)
+            await message.channel.send(filetext)
 
-    if message.content.startswith('GIT, '):
-        filetext = "some error has occurred"
-        print(message.content)
-        command = message.content.split()[1]
-        filetext = readfile(f"./git_entries/{command}.txt")
-        await message.channel.send(filetext)
+def get_correct_msg(keywords):
+    git_words = ["add", "branch", "checkout", "clone", "commit", "config", "init", "pull", "push", "status"]
+    for word in keywords:
+        if word in git_words:
+            return word
 
-def readfile(filepath):
+def read_git_file(command):
+    filepath = f"./git_entries/{command}.txt"
     with open(filepath, 'r') as f:
         return f.read()
 

@@ -6,6 +6,7 @@ from collections import Counter
 from string import punctuation
 
 from Scripts import nlp_model
+from Scripts.similarity_model import git_similarity
 
 client = discord.Client()
 model = spacy.load('en_core_web_md')
@@ -31,6 +32,10 @@ async def on_message(message):
         await message.channel.send(f"keywords is: {keyword_list}")
         formatted = format_keywords(keyword_list)
         await message.channel.send(keyword_list)
+        similar_word = git_similarity(keyword_list)
+        await message.channel.send(f"most similar git command is: {similar_word}")
+        git_file = read_git_file(similar_word)
+        await message.channel.send(git_file)
         if "git" in keyword_list:
             filetext = "some error has occurred"
             git_word = get_correct_msg(keyword_list)

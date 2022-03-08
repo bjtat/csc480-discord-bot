@@ -3,3 +3,4 @@ jupyterlab
 spacy
 discord.py
 python-dotenv
+thefuzz

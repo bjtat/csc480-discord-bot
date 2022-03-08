@@ -15,6 +15,16 @@ git_commands = {
 
 
 def git_similarity(keywords):
+    '''
+    Compute the similarity between objects considering their representation as vectors.
+    This function would compare two objects, and make a prediction of how similar they are.
+    
+        Parameters:
+            keywords -- a list of strings to compare.
+            
+        Returns:
+            command -- a string containing the most similar command.
+    '''
     as_doc = " ".join(keywords)
     highest_sim = 0.0
     command = ""

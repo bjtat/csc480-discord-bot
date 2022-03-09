@@ -10,7 +10,17 @@ git_commands = {
     "git init": "init",
     "git pull": "pull",
     "git push": "push",
-    "git status": "status"
+    "git status": "status",
+    
+    "download a repository": "clone",
+    "upload local branch commits to remote": "push",
+    "records file snapshots permanently in version history": "commit",
+    "set up user name and attach to commit transactions": "config",
+    "turn existing directory into a new git repository": "init",
+    "updates current local working branch to match remote": "pull",
+    "condition": "status",
+    "switch to a different branch": "checkout",
+    "create a new branch": "branch"
 }
 
 

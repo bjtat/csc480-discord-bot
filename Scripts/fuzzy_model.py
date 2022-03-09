@@ -17,8 +17,28 @@ choices = [
     # verb
     'setup',
     'create',
-    'set'
+    'set',
+    'upload',
+    'download',
+    'records',
+    'turn',
+    'match',
+    'update',
     
+    'local',
+    'remote',
+    'repository',
+    'snapshots',
+    'version',
+    'control',
+    'history',
+    'existing',
+    'directory',
+    'working',
+    'navigate',
+    'switch',
+    'different',
+    'new'
     # add any other generic word you want
 ]
 

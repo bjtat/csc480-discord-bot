@@ -24,7 +24,8 @@ git_commands = {
     "show working directory status": "status",
     "switch different branch": "checkout",
     "create new branch": "branch",
-    
+    "initialize": "init",
+    "configure" : "config",
     "help example commands": "help",
     "help": "help",
     "tutorial": "help",

@@ -1,3 +1,10 @@
-This is a textfile about git clone
-Some info about git clone
-Link to other git clone resources: help.com/git_clone
+git clone
+
+How to use:
+git clone [url]     : Clone (download) a repository that already exists on GitHub, including all of the files, branches, and commits.
+git clone --mirror  : Clone a repository but without the ability to edit any of the files.
+
+Guide:
+"git clone" command is used to create a copy of a specific repository or branch within a repository. When you clone a repository, you don't get one file, like you may in other centralized version control systems. By cloning with Git, you get the entire repository - all files, all branches, and all commits.
+
+Link to other git clone resources: github.com/git-guides/git-clone

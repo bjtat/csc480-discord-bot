@@ -1,3 +1,11 @@
-This is a textfile about git status
-Some info about git status
-Link to other git status resources: help.com/git_status
+git status
+
+How to use:
+git status      : Shows the current state of your Git working directory and staging area.
+git status -s   : Give output in short format
+git status -v   : Shows more "verbose" detail including the textual changes of any uncommitted files
+
+Guide:
+When in doubt, run "git status". This is always a good idea. The "git status" command only outputs information of the current state, it won't modify commits or changes in your local repository.
+
+Link to other git status resources: github.com/git-guides/git-status

@@ -1,3 +1,10 @@
-This is a textfile about git checkout
-Some info about git checkout
-Link to other git checkout resources: help.com/git_checkout
+git checkout
+
+How to use:
+git checkout -b ＜new-branch＞  : Creates and checks out ＜new-branch＞. The -b option is a convenience flag that tells Git to run git branch before running git checkout ＜new-branch＞.
+git checkout ＜branchname＞     : Switch branch to <branch-name>
+
+Guide:
+"git checkout", when used on branches, alters the target of the HEAD ref. It can be used to create branches, switch branches, and checkout remote branches. It is a counterpart to git merge.
+
+Link to other git checkout resources: git-scm.com/docs/git-checkout

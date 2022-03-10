@@ -1,3 +1,12 @@
-This is a textfile about git add
-Some info about git add
-Link to other git add resources: help.com/git_add
+git add
+
+How to use:
+git add <path>      : Stage a specific directory or file.
+git add .           : Stage all files (that are not listed in the .gitignore) in the entire repository.
+git add -p          : Interactively stage hunks of changes.
+
+Guide:
+The "git add" command adds new or changed files in your working directory to the Git staging area. "git add [filename]" selects that file, and moves it to the staging area, marking it for inclusion in the next commit. You can select all files, a directory, specific files, or even specific parts of a file for staging and commit.
+
+
+Link to other git add resources: github.com/git-guides/git-add

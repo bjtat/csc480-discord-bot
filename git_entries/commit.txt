@@ -1,3 +1,10 @@
-This is a textfile about git commit
-Some info about git commit
+git commit
+
+How to use:
+git commit -m "message"  : This starts the commit process, and allows you to include the commit message at the same time.
+git commit -am "message" : Skip staging phase, starts commit process, include a message.
+
+Guide:
+"git commit" creates a commit, which is like a snapshot of your repository. These commits are snapshots of your entire repository at specific times. You should make new commits often, based around logical units of change. Over time, commits should tell a story of the history of your repository and how it came to be the way that it currently is. Commits include lots of metadata in addition to the contents and message, like the author, timestamp, and more.
+
 Link to other git commit resources: help.com/git_commit

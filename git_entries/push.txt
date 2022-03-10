@@ -1,3 +1,12 @@
-This is a textfile about git push
-Some info about git push
-Link to other git push resources: help.com/git_push
+git push
+
+How to use:
+git push        : Uploads all local branch commits to the corresponding remote branch.
+git push -f     : Force a push that would otherwise be blocked, usually because it will delete or overwrite existing commits (Use with caution!)
+git push --all  : Push all branches
+git push --tags : Publish tags that aren't yet in the remote repository
+
+Guide:
+"git push" updates the remote branch with local commits. You can also think of "git push" as update or publish.
+
+Link to other git push resources: github.com/git-guides/git-push

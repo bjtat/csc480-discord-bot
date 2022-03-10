@@ -24,6 +24,8 @@ choices = [
     'turn',
     'match',
     'update',
+    'show',
+    'turn',
     
     'local',
     'remote',
@@ -38,7 +40,18 @@ choices = [
     'navigate',
     'switch',
     'different',
-    'new'
+    'new',
+    'file',
+    'current',
+    'globally',
+    'branch',
+    'condition',
+    
+    'help',
+    'example',
+    'commands',
+    'tutorial',
+    
     # add any other generic word you want
 ]
 

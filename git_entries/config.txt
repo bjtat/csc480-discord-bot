@@ -1,3 +1,10 @@
-This is a textfile about git config
-Some info about git config
-Link to other git config resources: help.com/git_config
+git config
+
+How to use:
+git config --global user.name "Your Name"   : Declare your name for all repositories.
+git config --global user.email mail@ex.com  : Declare your email for all repositories.
+
+Guide:
+You need to set who you are *before* creating any commit. That will allow commits to have the right author name and email associated to them.
+
+Link to other git config resources: git-scm.com/docs/git-config

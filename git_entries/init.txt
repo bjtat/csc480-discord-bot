@@ -1,3 +1,11 @@
-This is a textfile about git init
-Some info about git init
-Link to other git init resources: help.com/git_init
+git init
+
+How to use:
+git init                : Transform the current directory into a Git repository.
+git init <directory>    : Transform a directory in the current path into a Git repository.
+git init --bare         : Create a new bare repository.
+
+Guide:
+"git init" turns any directory into a Git repository. "git init" is one way to start a new project with Git. To start a repository, use either git init or git clone - not both.
+
+Link to other git init resources: github.com/git-guides/git-init

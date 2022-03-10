@@ -12,15 +12,22 @@ git_commands = {
     "git push": "push",
     "git status": "status",
     
-    "download a repository": "clone",
-    "upload local branch commits to remote": "push",
-    "records file snapshots permanently in version history": "commit",
-    "set up user name and attach to commit transactions": "config",
-    "turn existing directory into a new git repository": "init",
-    "updates current local working branch to match remote": "pull",
-    "condition": "status",
-    "switch to a different branch": "checkout",
-    "create a new branch": "branch"
+    "download repository": "clone",
+    "upload local branch commits remote": "push",
+    "records file snapshots permanently version history": "commit",
+    "set user name attach commit transactions": "config",
+    "set user name globally": "config",
+    "set user email globally": "config",
+    "turn existing directory new git repository": "init",
+    "updates current local working branch match remote": "pull",
+    "condition current": "status",
+    "show working directory status": "status",
+    "switch different branch": "checkout",
+    "create new branch": "branch",
+    
+    "help example commands": "help",
+    "help": "help",
+    "tutorial": "help",
 }
 
 
@@ -44,5 +51,4 @@ def git_similarity(keywords):
         if current_sim > highest_sim:
             highest_sim = current_sim
             command = git_commands[key]
-    return command
-
+    return command, highest_sim

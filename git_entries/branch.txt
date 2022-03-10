@@ -1,3 +1,15 @@
-This is a textfile about git branch
-Some info about git branch
+git branch
+
+How to use:
+git branch              : List all of the branches in your repository.
+git branch <branch>     : Create a new branch called ＜branch＞. This does not check out the new branch.
+git branch -m <branch>  : Rename the current branch to ＜branch＞.
+git branch -a           : List all remote branches.
+git branch -d <branch>  : "Safe" way to delete the specified branch.
+git branch -D <branch>  : Force delete the specified branch.
+
+Guide:
+The git branch commands primary functions are to create, list, rename and delete branches. To operate further on the resulting branches the command is commonly used with other commands like git checkout.
 Link to other git branch resources: help.com/git_branch
+
+Link to other git add resources: git-scm.com/docs/git-branch

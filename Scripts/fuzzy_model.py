@@ -46,6 +46,8 @@ choices = [
     'globally',
     'branch',
     'condition',
+    'initialize',
+    'configure',
     
     'help',
     'example',
